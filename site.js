@@ -43,6 +43,23 @@ const vue_app = Vue.createApp({
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            getMonthTest(dataArray){
+
+            },
+            posterClick(index){
+                  let x = movies[index].posterIndex;
+                  let y = movies[index].posters.Length;
+
+                  if(x < y) {
+                        movies[index].posterIndex++;
+                  }
+                  else{
+                        movies[index].posterIndex = 0
+                  }
+            },
+            timeText(minutes){
+                  Math.trunc(x);
+            }
       },
 
 
