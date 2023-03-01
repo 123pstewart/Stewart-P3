@@ -44,21 +44,66 @@ const vue_app = Vue.createApp({
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
             getMonthTest(dataArray){
-
+            //       switch(dataArray){     
+            //       case 0:
+            //             return "January " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 1:
+            //             return "Feburary " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 2:
+            //             return "March " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 3:
+            //             return "April " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 4:
+            //             return "May " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 5:
+            //             return "June " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 6:
+            //             return "July " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 7:
+            //             return "August " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 8:
+            //             return "September " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 9:
+            //             return "October " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 10:
+            //             return "November " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //       case 11:
+            //              return "December " + data Arry[2] + ", " + dataArray[0];
+            //       break;
+            //      default:
+            //       return: "error";
+            //       break;
+            // }
             },
             posterClick(index){
-                  let x = movies[index].posterIndex;
-                  let y = movies[index].posters.Length;
+                  let x = this.movirs[index].posters.length(); 
+                  let y = this.movirs[index].posterIndex; 
 
-                  if(x < y) {
-                        movies[index].posterIndex++;
+                  console.log(x);
+                  console.log(y);
+
+                  if(x < y-1) {
+                        this.movies[index].posterIndex++
                   }
                   else{
-                        movies[index].posterIndex = 0
+                        this.movies[index].posterindex = 0
                   }
             },
             timeText(minutes){
-                  Math.trunc(x);
+                  let hour = Math.trunc(minutes/60);
+                  let min = minutes % 60
+                  return hour + "h " + min + "m";
             }
       },
 
