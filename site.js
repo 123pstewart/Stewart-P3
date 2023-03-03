@@ -43,68 +43,67 @@ const vue_app = Vue.createApp({
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-            getMonthTest(dataArray){
-            //       switch(dataArray){     
-            //       case 0:
-            //             return "January " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 1:
-            //             return "Feburary " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 2:
-            //             return "March " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 3:
-            //             return "April " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 4:
-            //             return "May " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 5:
-            //             return "June " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 6:
-            //             return "July " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 7:
-            //             return "August " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 8:
-            //             return "September " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 9:
-            //             return "October " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 10:
-            //             return "November " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //       case 11:
-            //              return "December " + data Arry[2] + ", " + dataArray[0];
-            //       break;
-            //      default:
-            //       return: "error";
-            //       break;
-            // }
+            getMonthtext(dateArray){
+                  switch(dateArray[1]){     
+                  case 0:
+                        return "Error";
+                  break;
+                  case 1:
+                        return "January " +" "+ dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 2:
+                        return "Feburary " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 3:
+                        return "March " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 4:
+                        return "April " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 5:
+                        return "May " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 6:
+                        return "June " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 7:
+                        return "July " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 8:
+                        return "August " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 9:
+                        return "September " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 10:
+                        return "October " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 11:
+                        return "November " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                  case 12:
+                         return "December " + dateArray[2] + ", " + dateArray[0];
+                  break;
+                 default:
+                  return "Error";
+                  break;
+            }
             },
             posterClick(index){
-                  let x = this.movirs[index].posters.length(); 
-                  let y = this.movirs[index].posterIndex; 
-
-                  console.log(x);
-                  console.log(y);
-
+                  let x = this.movies[index].posterindex; 
+                  let y = this.movies[index].posters.length;
                   if(x < y-1) {
-                        this.movies[index].posterIndex++
+                        this.movies[index].posterIndex++;
                   }
                   else{
-                        this.movies[index].posterindex = 0
+                        this.movies[index].posterindex = 0;
                   }
             },
             timeText(minutes){
-                  let hour = Math.trunc(minutes/60);
-                  let min = minutes % 60
-                  return hour + "h " + min + "m";
-            }
+                  var hours = Math.trunc(minutes/60);
+                  var min = minutes % 60
+                  return hours + "h " + min + "m";
+            },
       },
 
 
