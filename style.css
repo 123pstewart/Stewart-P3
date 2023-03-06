@@ -7,6 +7,10 @@ body {
     overflow: auto;
     background-image: url(img/geometry.jpg);
 }
+img {
+width: 450px;
+height: 500px;
+}
 
 /* This stylizes the header area */
 .header {

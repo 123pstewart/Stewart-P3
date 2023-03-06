@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Puss in Boots the Last Wish",
+            "iscore": 9.5,
+            "rating": "PG",
+            "runtime": 189,
+            "released": [2022, 12, 14],
+            "country": "USA",
+            "posters": ["img/pussinboots.jpg"],
+            "imdb": "https://www.imdb.com/title/tt3915174/",
+            "website": "https://www.dreamworks.com/movies/puss-in-boots-the-last-wish",
+            "likes": 1923,
+            "dislikes": 87,
+            "posterindex": 0
+      },
+      {
+            "title": "Venom",
+            "iscore": 7.0,
+            "rating": "R",
+            "runtime": 231,
+            "released": [2019, 10, 30],
+            "country": "USA",
+            "posters": ["img/venom.jpg"],
+            "imdb": "https://www.imdb.com/title/tt1270797/",
+            "website": "https://www.sonypictures.com/movies/venom",
+            "likes": 952,
+            "dislikes": 403,
+            "posterindex": 0
+      },
+      {
+            "title": "Encanto",
+            "iscore": 8.4,
+            "rating": "PG",
+            "runtime": 176,
+            "released": [2020, 4, 16],
+            "country": "USA",
+            "posters": ["img/encanto.avif"],
+            "imdb": "https://www.imdb.com/title/tt2953050/",
+            "website": "https://movies.disney.com/encanto",
+            "likes": 1812,
+            "dislikes": 231,
+            "posterindex": 0
       }
 ]

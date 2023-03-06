@@ -93,7 +93,7 @@ const vue_app = Vue.createApp({
                   let x = this.movies[index].posterindex; 
                   let y = this.movies[index].posters.length;
                   if(x < y-1) {
-                        this.movies[index].posterIndex++;
+                        this.movies[index].posterindex++;
                   }
                   else{
                         this.movies[index].posterindex = 0;
